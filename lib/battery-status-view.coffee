@@ -56,9 +56,8 @@ class BatteryStatusView extends HTMLDivElement
     batteryLevel().then (level) =>
       percentage = level * 100
       @updateStatusText(percentage)
-    isCharging().then (result) =>
-      console.log "risultato:", result
-      @updateStatusIcon percentage, result
+      isCharging().then (result) =>
+        @updateStatusIcon percentage, result
 
 
   updateStatusText: (percentage) ->
