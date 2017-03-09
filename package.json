@@ -1,0 +1,35 @@
+{
+  "name": "battery-status",
+  "main": "./lib/main",
+  "author": "Jonas Auer <jonas.auer.94@gmail.com",
+  "version": "0.11.1",
+  "description": "Displays your laptop's battery status in the status bar of Atom.",
+  "keywords": [
+    "battery",
+    "status",
+    "laptop",
+    "charge",
+    "power"
+  ],
+  "repository": "https://github.com/cmd-johnson/atom-battery-status",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/cmd-johnson/atom-battery-status/issues"
+  },
+  "homepage": "https://github.com/cmd-johnson/atom-battery-status",
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "battery-level": "^2.0.1",
+    "is-charging": "^1.1.0"
+  }
+}

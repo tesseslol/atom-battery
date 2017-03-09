@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'battery-icons';
+  src: url("atom://battery-status/fonts/battery-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.battery-status [class^="icon-"], .battery-status [class*=" icon-"] {
+  font-family: 'battery-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.battery-status .icon-battery:before {
+  content: "\e902"; }
+
+.battery-status .icon-battery-charging:before {
+  content: "\e901"; }
+
+.battery-status .icon-battery-alert:before {
+  content: "\e900"; }
+
+.battery-status .icon-battery-unknown:before {
+  content: "\e903"; }
+
+.battery-status {
+  margin-top: -1px !important; }
+  body:not(.fullscreen) .battery-status.hide-outside-fullscreen {
+    display: none !important; }
+  .battery-status .back-icon {
+    opacity: .5;
+    margin-left: 0em; }
+  .battery-status .front-icon {
+    margin-left: -1em; }
+  .battery-status .status {
+    font-size: 14px;
+    display: inline-block; }
+    .battery-status .status.normal {
+      color: #8bc34a; }
+    .battery-status .status.warning {
+      color: #ff9800; }
+    .battery-status .status.critical {
+      color: #d50000; }
+    .battery-status .status.unknown {
+      color: #0277bd; }

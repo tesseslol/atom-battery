@@ -1,0 +1,42 @@
+@import "battery-icons";
+
+$color-green: #8bc34a;
+$color-orange: #ff9800;
+$color-blue: #0277bd;
+$color-red: #d50000;
+
+.battery-status {
+  // not very nice, but does the job
+  margin-top: -1px !important;
+
+  body:not(.fullscreen) &.hide-outside-fullscreen {
+    display: none !important;
+  }
+
+  .back-icon {
+    opacity: .5;
+    margin-left: 0em;
+  }
+
+  .front-icon {
+    margin-left: -1em;
+  }
+
+  .status {
+    font-size: 14px;
+    display: inline-block;
+
+    &.normal {
+      color: $color-green;
+    }
+    &.warning {
+      color: $color-orange;
+    }
+    &.critical {
+      color: $color-red;
+    }
+    &.unknown {
+      color: $color-blue;
+    }
+  }
+}
