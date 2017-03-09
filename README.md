@@ -3,7 +3,7 @@ This package is forked by [atom-battery-status](https://github.com/cmd-johnson/a
 Displays the current power level of the battery in Atom's status bar, and
 indicates if the battery is currently charging. Especially useful if you often
 work in full-screen mode on your laptop!
-Now BatteryStatus is Cross Browser compatibles.
+Now BatteryStatus is Cross platform (window/mac/linux) compatibles.
 
 ![How a battery cycle looks like in Atom's status bar when using this package](https://github.com/cmd-johnson/atom-battery-status/raw/master/preview.png)
 
