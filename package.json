@@ -2,7 +2,7 @@
   "name": "statusbar-battery",
   "main": "./lib/main",
   "author": "Davide Tessari <davidetessar@gmail.com>",
-  "version": "v0.11.2i",
+  "version": "v0.11.2",
   "description": "Displays your laptop's battery status in the status bar of Atom.",
   "keywords": [
     "battery",
