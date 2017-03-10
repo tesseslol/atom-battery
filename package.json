@@ -1,5 +1,5 @@
 {
-  "name": "atom-battery",
+  "name": "statusbar-battery",
   "main": "./lib/main",
   "author": "Davide Tessari <davidetessar@gmail.com>",
   "version": "v0.11.1i",
