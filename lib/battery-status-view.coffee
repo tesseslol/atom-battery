@@ -54,7 +54,7 @@ class BatteryStatusView extends HTMLDivElement
     percentage = null;
     # fetch battery percentage and charge status and update the view
     batteryLevel().then (level) =>
-      percentage = level * 100
+      percentage = (level * 100).toFixed()
       @updateStatusText(percentage)
       isCharging().then (result) =>
         @updateStatusIcon percentage, result
